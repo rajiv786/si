@@ -4,7 +4,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import { Box } from '@mui/system';
 import Dashboard_au from './Dashboard_author';
 import { Paper,Grid } from '@mui/material';
-import DashboardFooter from './DashboardFooter';
+// import DashboardFooter from './DashboardFooter';
 import useMediaQuery from '@mui/material/useMediaQuery';
 function Faq() {
 	const [isTextVisible, setIsTextVisible] = useState(false);
@@ -24,10 +24,10 @@ function Faq() {
 	  <>
 		  <Dashboard_au />
 		  <Box sx={{ background:'#F3F5F9',display:"flex",width:mobile?'375px':'1600px',height:mobile?'412px':'1300px'}}>
-    <Paper component='form'  sx={{position: 'absolute',
+    <Paper  sx={{position: 'absolute',
 width:mobile?'272px': '1152px',
-height: mobile?'48px':'1148px',marginLeft:mobile?'24px':'240px',
-top:mobile?'90px': '115px',
+height: mobile?'48px':'47px',marginLeft:mobile?'24px':'240px',
+top:mobile?'90px': '103px',
 background: '#06b2bbcc',
 				borderRadius: '12px'
 			  }}>
@@ -35,11 +35,69 @@ background: '#06b2bbcc',
 			  </Paper>
 			  {isTextViible ? (
 			  <>
-<Paper  sx={{width: mobile?"272px":'1152px',height:mobile?"42px": '17px',marginTop: '164px',background:'#FFFFFF',marginLeft:"24px", borderRadius: '12px'
+<Paper  sx={{width: mobile?"272px":'768px',height:mobile?"42px": '70px',marginTop: '164px',background:'#FFFFFF',marginLeft:mobile?"24px":"264px", borderRadius: '12px'
+				  }}>
+					  <Grid container md={12} xs={12} sx={{marginTop:"20px"}}>
+						  <Grid item md={10} xs={11}>
+						  <Typography sx={{fontSize:'18px',textAlign:'center',lineHeight:"28px"}}>How can a professional editor help?</Typography>
+							  </Grid>
+							  <Grid item md={2} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					 
+					  </Grid> 
+				  </Paper>
+						  
+			  </>
+			    ) : (
+				  <>
+					 <Paper   sx={{
+width: mobile?'272px':'768px',
+height: mobile?"42px": '120px',marginLeft:'264px',
+marginTop: '164px',background:'#FFFFFF',
+					  borderRadius: '12px'
+				  }}>
+					  <Grid container md={12} sx={{marginTop:"20px"}}>
+					  <Grid item md={10} xs={11}>
+									  <Typography sx={{fontSize:'18px',textAlign:'center',lineHeight:"28px"}}>How can a professional editor help?</Typography>
+								  </Grid>
+								  <Grid item md={2} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					  <Typography>There are different types of editing services available on Hubhawks. Here we define what is meant be “copy writing”, as they don’t always mean the same thing in the US as they do in the Uk and elsewhere. </Typography>
+						  
+						  
+					 
+					 
+					  </Grid> 
+                      
+				  </Paper>
+					
+					
+				  </>
+				  
+			  )}
+			      
+    <Paper component='form'  sx={{position: 'absolute',
+width:mobile?'272px': '1152px',
+height: mobile?'48px':'50px',marginLeft:mobile?'24px':'266px',
+top:mobile?'90px': '400px',
+background: '#06b2bbcc',
+				borderRadius: '12px'
+			  }}>
+				 <Typography sx={{textAlign:"initial",color:"#FFFFFF",marginLeft:"16px",marginTop:"12px"}}> Author FAQ</Typography>
+			  </Paper>
+			  {isTextViible ? (
+			  <>
+<Paper  sx={{width: mobile?"272px":'1152px',height:mobile?"42px": '17px',Top: '764px',background:'#FFFFFF',marginLeft:"24px", borderRadius: '12px'
 				  }}>
 					  <Grid container md={12} xs={12}>
 						  <Grid item md={8} xs={11}>
-						  <Typography sx={{fontSize:'14px'}}>How can a professional editor help?</Typography>
+						  <Typography sx={{fontSize:'14px'}}>Who will be doing the work for me?</Typography>
 							  </Grid>
 							  <Grid item md={4} xs={1}>
 					  <Button onClick={toggleTxt}>	  
@@ -56,35 +114,282 @@ background: '#06b2bbcc',
 					 <Paper   sx={{
 width: mobile?'272px':'1152px',
 height: '176px',marginLeft:'240px',
-marginTop: '164px',background:'#FFFFFF',marginLeft:"24px",
+top: '700px',background:'#FFFFFF',marginLeft:"24px",
 					  borderRadius: '12px'
 				  }}>
 					  <Grid container md={12}>
 					  <Grid item md={8} xs={11}>
-									  <Typography sx={{fontSize:'14px'}}>How can a professional editor help?</Typography>
+									  <Typography sx={{fontSize:'14px'}}>Who will be doing the work for me?</Typography>
 								  </Grid>
 								  <Grid item md={4} xs={1}>
 					  <Button onClick={toggleTxt}>	  
 				  <KeyboardArrowDownOutlinedIcon/>
 								  </Button>
 								  </Grid>
-					  <Typography>There are different types of editing services available on Hubhawks. Here we define what is meant be “copy writing”, as they don’t always mean the same thing in the US as they do in the Uk and elsewhere. </Typography>
+					  <Typography  md={10} xs={8} sx={{margin:'initial',fontSize:'14px'}}>A freelancer will be assigned to work on your project on the basis of the information you provide in the order form.
+
+Service I am looking for is not available on the website.
+You can connect with us on sales@hubhawks.com for any services that are not mentioned on the platform, our team will get in touch with you </Typography>
 						  
 						  
 					 
 					 
 					  </Grid> 
+                      
 				  </Paper>
 					
 					
 				  </>
 				  
 				  )}
-			  <DashboardFooter />
+			  {/* <DashboardFooter /> */}
+			
+			  {/* <DashboardFooter /> */}
 			  </Box>
+          
 	  
-           	
-			  
+              <Box sx={{ background:'#F3F5F9',display:"flex",width:mobile?'375px':'1600px',height:mobile?'412px':'100px'}}>
+    <Paper component='form'  sx={{position: 'absolute',
+width:mobile?'272px': '1152px',
+height: mobile?'48px':'11px',marginLeft:mobile?'24px':'240px',
+top:mobile?'90px': '700px',
+background: '#06b2bbcc',
+				borderRadius: '12px'
+			  }}>
+				 
+			  </Paper>
+			  {isTextViible ? (
+			  <>
+<Paper  sx={{width: mobile?"272px":'1152px',height:mobile?"42px": '17px',marginTop: '164px',background:'#FFFFFF',marginLeft:"24px", borderRadius: '12px'
+				  }}>
+					  <Grid container md={12} xs={12}>
+						  <Grid item md={8} xs={11}>
+						  <Typography sx={{fontSize:'14px'}}>Can I get more than one service at a time?</Typography>
+							  </Grid>
+							  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					 
+					  </Grid> 
+				  </Paper>
+						  
+			  </>
+			    ) : (
+				  <>
+					 <Paper   sx={{
+width: mobile?'272px':'1152px',
+height: '176px',marginLeft:'240px',
+marginTop: '200px',background:'#FFFFFF',marginLeft:"24px",
+					  borderRadius: '12px'
+				  }}>
+					  <Grid container md={12}>
+					  <Grid item md={8} xs={11}>
+									  <Typography sx={{fontSize:'14px'}}>Can I get more than one service at a time?</Typography>
+								  </Grid>
+								  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					  <Typography sx={{margin:'auto',fontSize:'14px'}}>Yes! We can create a custom order for you with all the services needed.
+</Typography>
+						  
+						  
+					 
+					 
+					  </Grid> 
+                      
+				  </Paper>
+					
+					
+				  </>
+				  
+				  )}
+			  {/* <DashboardFooter /> */}
+			  </Box>   	
+			  <Box sx={{ background:'#F3F5F9',display:"flex",width:mobile?'375px':'1600px',height:mobile?'412px':'150px'}}>
+    <Paper component='form'  sx={{position: 'absolute',
+width:mobile?'272px': '1152px',
+height: mobile?'48px':'11px',marginLeft:mobile?'24px':'240px',
+top:mobile?'90px': '805px',
+background: '#06b2bbcc',
+
+				borderRadius: '12px'
+			  }}>
+				 <Typography sx={{textAlign:"initial",color:"#FFFFFF",marginLeft:"16px",marginTop:"12px"}}>Collaborators</Typography>
+			  </Paper>
+			  {isTextViible ? (
+			  <>
+<Paper  sx={{width: mobile?"272px":'100px',height:mobile?"42px": '17px',marginTop: '164px',background:'#FFFFFF',marginLeft:"24px", borderRadius: '12px'
+				  }}>
+					  <Grid container md={12} xs={12}>
+						  <Grid item md={8} xs={11}>
+						  <Typography sx={{fontSize:'14px'}}>How will work get assigned?</Typography>
+							  </Grid>
+							  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					 
+					  </Grid> 
+				  </Paper>
+						  
+			  </>
+			    ) : (
+				  <>
+					 <Paper   sx={{
+width: mobile?'272px':'1152px',
+height: '176px',marginLeft:'240px',
+marginTop: '300px',background:'#FFFFFF',marginLeft:"24px",
+					  borderRadius: '12px'
+				  }}>
+					  <Grid container md={12}>
+					  <Grid item md={8} xs={11}>
+									  <Typography sx={{fontSize:'14px'}}>How will work get assigned?</Typography>
+								  </Grid>
+								  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					  <Typography sx={{margin:'auto',fontSize:'14px'}}>Projects will be assigned to you on the basis of the information you provide us in the onboarding form. </Typography>
+						  
+						  
+					 
+					 
+					  </Grid> 
+                      
+				  </Paper>
+					
+					
+				  </>
+				  
+				  )}
+			  {/* <DashboardFooter /> */}
+			  </Box>
+              <Box sx={{ background:'#F3F5F9',display:"flex",width:mobile?'375px':'1600px',height:mobile?'412px':'130px'}}>
+    <Paper component='form'  sx={{position: 'absolute',
+width:mobile?'272px': '1152px',
+height: mobile?'48px':'11px',marginLeft:mobile?'24px':'240px',
+top:mobile?'90px': '755px',
+background: '#06b2bbcc',
+				borderRadius: '12px'
+			  }}>
+				 
+			  </Paper>
+			  {isTextViible ? (
+			  <>
+<Paper  sx={{width: mobile?"272px":'1152px',height:mobile?"42px": '17px',marginTop: '164px',background:'#FFFFFF',marginLeft:"24px", borderRadius: '12px'
+				  }}>
+					  <Grid container md={12} xs={12}>
+						  <Grid item md={8} xs={11}>
+						  <Typography sx={{fontSize:'14px'}}>When will I get the payment?</Typography>
+							  </Grid>
+							  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					 
+					  </Grid> 
+				  </Paper>
+						  
+			  </>
+			    ) : (
+				  <>
+					 <Paper   sx={{
+width: mobile?'272px':'1152px',
+height: '176px',marginLeft:'240px',
+marginTop: '400px',background:'#FFFFFF',marginLeft:"24px",
+					  borderRadius: '12px'
+				  }}>
+					  <Grid container md={12}>
+					  <Grid item md={8} xs={11}>
+									  <Typography sx={{fontSize:'14px'}}>When will I get the payment?</Typography>
+								  </Grid>
+								  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					  <Typography sx={{margin:'auto',fontSize:'14px'}}>The payment for the project will be credited in your wallet after the project completion is approved by the author. </Typography>
+						  
+						  
+					 
+					 
+					  </Grid> 
+                      
+				  </Paper>
+					
+					
+				  </>
+				  
+				  )}
+			  {/* <DashboardFooter /> */}
+			  </Box>
+              <Box sx={{ background:'#F3F5F9',display:"flex",width:mobile?'375px':'1600px',height:mobile?'412px':'100px'}}>
+    <Paper component='form'  sx={{position: 'absolute',
+width:mobile?'272px': '1152px',
+height: mobile?'48px':'11px',marginLeft:mobile?'24px':'240px',
+top:mobile?'90px': '905px',
+background: '#06b2bbcc',
+				borderRadius: '12px'
+			  }}>
+				 
+			  </Paper>
+			  {isTextViible ? (
+			  <>
+<Paper  sx={{width: mobile?"272px":'1152px',height:mobile?"42px": '17px',marginTop: '164px',background:'#FFFFFF',marginLeft:"24px", borderRadius: '12px'
+				  }}>
+					  <Grid container md={12} xs={12}>
+						  <Grid item md={8} xs={11}>
+						  <Typography sx={{fontSize:'14px'}}>What will be the payment structure?</Typography>
+							  </Grid>
+							  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					 
+					  </Grid> 
+				  </Paper>
+						  
+			  </>
+			    ) : (
+				  <>
+					 <Paper   sx={{
+width: mobile?'272px':'1152px',
+height: '176px',marginLeft:'240px',
+marginTop: '500px',background:'#FFFFFF',marginLeft:"24px",
+					  borderRadius: '12px'
+				  }}>
+					  <Grid container md={12}>
+					  <Grid item md={8} xs={11}>
+									  <Typography sx={{fontSize:'14px'}}>What will be the payment structure?</Typography>
+								  </Grid>
+								  <Grid item md={4} xs={1}>
+					  <Button onClick={toggleTxt}>	  
+				  <KeyboardArrowDownOutlinedIcon/>
+								  </Button>
+								  </Grid>
+					  <Typography sx={{margin:'auto',fontSize:'14px'}}>We have a standardised payment system, all creators in the same service genre will be paid the same rates. </Typography>
+						  
+						  
+					 
+					 
+					  </Grid> 
+                      
+				  </Paper>
+					
+					
+				  </>
+				  
+				  )}
+			  {/* <DashboardFooter /> */}
+			  </Box>
 		  
 	
 	
