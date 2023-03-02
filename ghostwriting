@@ -67,8 +67,8 @@ function GhostWriting1  ()  {
 					height="194"
 					image="https://drive.google.com/uc?export=view&id=1JlhoJV-AJhEpbGWJDVi4qqfAxQPMwFER"
 					alt="Paella dish" style={{
-						justifyContent: 'space-around', width: mobile?'247px':ipad?"345px":'472px', height: mobile?'233px':ipad?"309px":'417px', position: 'absolute',borderRadius:"36px",
-						marginLeft:mobile?'69px':ipad?"-9px":'0px',marginTop:mobile?'-35px':ipad?"-49px":'-18px'
+						justifyContent: 'space-around', width: mobile?'247px':ipad?"345px":'33%', height: mobile?'233px':ipad?"309px":'55%', position: 'absolute',borderRadius:"36px",
+						marginLeft:mobile?'69px':ipad?"-9px":'0px',marginTop:mobile?'-35px':ipad?"-49px":'26px'
 					}}
       />
       <CardContent style={{justifyContent:'center',display:'flex'}}>
@@ -76,7 +76,7 @@ function GhostWriting1  ()  {
 		component="img"
 					image="https://drive.google.com/uc?export=view&id=1W0eSX1BhePNNVho37DHzy0SQlV-Q2LBW"
 					alt="Paella dish" style={{
-						justifyContent: 'space-around', width:mobile?'272px':ipad?"358px":'472px', height:mobile?'185px': ipad?"246px":'417px',marginLeft:mobile?'-8px':ipad?"-74px":'0px',borderRadius:"36px"
+						justifyContent: 'space-around', width:mobile?'272px':ipad?"358px":'135%', height:mobile?'185px': ipad?"246px":'417px',marginLeft:mobile?'-8px':ipad?"-74px":'0px',borderRadius:"36px",marginTop:"50px"
 					}}
       />
       </CardContent>
