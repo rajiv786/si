@@ -34,20 +34,20 @@ function GhostWriting1  ()  {
   return (
     <>
      <ResponsiveAppBar/>
-		  
-<Grid container lg={10} xs={10}  sm={10} md={10} sx={{margin:'auto',marginTop:'36px'}}>
-<Grid item lg={10} md={12} xs={12}   sx={{textAlign: 'center'}}>
+	 <Grid item lg={10} md={12} xs={12}   sx={{textAlign: 'center',marginTop:"80px",marginBottom:"50px"}}>
         <Typography variant='h2' sx={{textAlign:'center',fontSize:mobile?'20px':'36px',lineHeight:mobile?'24px':'48px',fontWeight:mobile?'600':'600'}}>Ghostwriting</Typography>
-        </Grid>
+        </Grid>	  
+<Grid container lg={10} xs={10}  sm={10} md={10} sx={{margin:'auto',marginTop:'0px'}}>
 
-                <Grid container md={7} xs={11} lg={8} sm={7} >
+
+                <Grid container md={7} xs={11} lg={7} sm={7} >
         
         
-        <Grid container md={12} xs={12} lg={12}>
-        <Grid item lg={11} md={12} xs={12}   sx={{textAlign: 'center'}}>
-        <Typography variant='h2' sx={{textAlign:'initial',fontSize:mobile?'14px':'18px',lineHeight:mobile?'20px':'28px',fontWeight:mobile?'400':'400',marginTop:mobile?'26px':'56px'}}>Are you looking for someone familiar with the subject of your book, and who is willing to spend the time to get to know your vision for the project? </Typography>
+        <Grid container md={12} xs={12} lg={10.5}>
+        <Grid item lg={12} md={12} xs={12}   sx={{textAlign: 'center'}}>
+        <Typography variant='h2' sx={{textAlign:'initial',fontSize:mobile?'14px':'18px',lineHeight:mobile?'20px':'28px',fontWeight:mobile?'400':'400',marginTop:mobile?'26px':'0px'}}>Are you looking for someone familiar with the subject of your book, and who is willing to spend the time to get to know your vision for the project? </Typography>
         </Grid>
-        <Grid item lg={11} md={12} xs={12}   sx={{textAlign: 'center'}}>
+        <Grid item lg={12} md={12} xs={12}   sx={{textAlign: 'center'}}>
         <Typography variant='h2' sx={{textAlign:'initial',fontSize:mobile?'14px':'18px',lineHeight:mobile?'20px':'28px',fontWeight:mobile?'400':'400',marginTop:mobile?'16px':'26px'}}>Many best-selling publications, including fiction, business books, and autobiographies of famous people, are ghostwritten. You can employ a ghostwriter to write your book if you have a significant narrative to share but lack the writing ability (or perhaps the time) to put it on paper.</Typography>
         </Grid>
         <Grid item lg={11} md={12} xs={12}   sx={{textAlign: 'center'}}>
